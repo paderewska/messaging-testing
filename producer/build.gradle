@@ -12,6 +12,7 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'eclipse'
+apply plugin: 'groovy'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
@@ -23,6 +24,13 @@ repositories {
 	mavenCentral()
 }
 
+sourceSets {
+    test {
+        groovy {
+            srcDirs = ['src/test/groovy']
+        }
+    }
+}
 
 ext {
 	springCloudVersion = 'Finchley.SR1'
@@ -34,9 +42,12 @@ dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-web')
 	implementation('org.springframework.cloud:spring-cloud-stream')
 	implementation('org.springframework.cloud:spring-cloud-stream-binder-rabbit')
+	implementation('org.codehaus.groovy:groovy-all:2.4.4')
 	runtimeOnly('com.h2database:h2')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 	testImplementation('org.springframework.cloud:spring-cloud-stream-test-support')
+	testImplementation('org.spockframework:spock-core:1.1-groovy-2.4')
+	testImplementation('org.codehaus.groovy:groovy-all:2.4.4')
 }
 
 dependencyManagement {
