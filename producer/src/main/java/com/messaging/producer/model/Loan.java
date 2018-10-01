@@ -18,6 +18,9 @@ public class Loan {
         this.cardLimit = limit;
     }
 
+    public Loan() {
+    }
+
     public static Loan withDefaultLimit(String pesel) {
         return new Loan(pesel, new BigDecimal(2000));
     }
