@@ -11,13 +11,13 @@ class ApplyForLoanWithEventUnitTest extends Specification {
 
     LoanRepository loanRepository = Stub()
     DomainEventPublisher publisher = Mock()
-    ApplyForLoanService applyForLoanService = new ApplyForLoanService(publisher, loanRepository);
+    ApplyForLoanService applyForLoanService = new ApplyForLoanService(publisher, loanRepository)
 
     def 'should emit LoanGranted when client born in 60s or later'() {
         when:
-            applyForLoanService.apply("85101406621")
+        applyForLoanService.apply("85101406621")
         then:
-            1 * publisher.publish({it as LoanGranted})
+        1 * publisher.publish({it as LoanGranted})
     }
 
     def 'should emit LoanApplicationRejected when client born in 60s or later'() {

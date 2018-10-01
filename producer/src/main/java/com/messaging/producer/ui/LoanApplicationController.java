@@ -1,7 +1,5 @@
 package com.messaging.producer.ui;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.messaging.producer.application.ApplyForLoanService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

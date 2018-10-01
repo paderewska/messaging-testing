@@ -1,6 +1,8 @@
 package com.messaging.producer.ui
 
-import org.springframework.beans.factory.annotation.Autowired
+import com.messaging.producer.DomainEventPublisher
+import com.messaging.producer.application.ApplyForLoanService
+import com.messaging.producer.model.LoanRepository
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.http.ResponseEntity
 import spock.lang.Specification
@@ -8,8 +10,11 @@ import spock.lang.Specification
 @SpringBootTest
 class LoanApplicationControllerTest extends Specification {
 
-    @Autowired
-    LoanApplicationController loanApplicationController
+    LoanRepository loanRepository = Stub()
+    DomainEventPublisher publisher = Mock()
+    ApplyForLoanService applyForLoanService = new ApplyForLoanService(publisher, loanRepository)
+
+    LoanApplicationController loanApplicationController = new LoanApplicationController(applyForLoanService)
 
     def 'should be able to get card when born in 80s or later'() {
         when:

@@ -3,10 +3,12 @@ package com.messaging.producer;
 import com.messaging.producer.model.DomainEvent;
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.messaging.support.GenericMessage;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class ToRabbitMqEventPublisher implements DomainEventPublisher {
 
     private final Source source;
