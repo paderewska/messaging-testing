@@ -1,10 +1,10 @@
-package com.messaging.events
+package com.messaging.producer.loan.events
 
-import com.messaging.producer.DomainEventPublisher
-import com.messaging.producer.application.ApplyForLoanService
-import com.messaging.producer.model.LoanApplicationRejected
-import com.messaging.producer.model.LoanGranted
-import com.messaging.producer.model.LoanRepository
+import com.messaging.producer.loan.DomainEventPublisher
+import com.messaging.producer.loan.application.ApplyForLoanService
+import com.messaging.producer.loan.model.LoanApplicationRejected
+import com.messaging.producer.loan.model.LoanGranted
+import com.messaging.producer.loan.model.LoanRepository
 import spock.lang.Specification
 
 class ApplyForLoanWithEventUnitTest extends Specification {

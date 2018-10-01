@@ -1,10 +1,10 @@
-package com.messaging.producer.application;
+package com.messaging.producer.loan.application;
 
-import com.messaging.producer.DomainEventPublisher;
-import com.messaging.producer.model.Loan;
-import com.messaging.producer.model.LoanApplicationRejected;
-import com.messaging.producer.model.LoanGranted;
-import com.messaging.producer.model.LoanRepository;
+import com.messaging.producer.loan.DomainEventPublisher;
+import com.messaging.producer.loan.model.Loan;
+import com.messaging.producer.loan.model.LoanApplicationRejected;
+import com.messaging.producer.loan.model.LoanGranted;
+import com.messaging.producer.loan.model.LoanRepository;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;

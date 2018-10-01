@@ -1,4 +1,4 @@
-package com.messaging.producer.model;
+package com.messaging.producer.loan.model;
 
 import org.springframework.data.repository.CrudRepository;;
 

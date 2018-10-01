@@ -1,6 +1,6 @@
-package com.messaging.producer.ui;
+package com.messaging.producer.loan.ui;
 
-import com.messaging.producer.application.ApplyForLoanService;
+import com.messaging.producer.loan.application.ApplyForLoanService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

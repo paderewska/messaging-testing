@@ -1,8 +1,10 @@
-package com.messaging.producer.ui
+package com.messaging.producer.loan.ui
 
-import com.messaging.producer.DomainEventPublisher
-import com.messaging.producer.application.ApplyForLoanService
-import com.messaging.producer.model.LoanRepository
+import com.messaging.producer.loan.DomainEventPublisher
+import com.messaging.producer.loan.application.ApplyForLoanService
+import com.messaging.producer.loan.model.LoanRepository
+import com.messaging.producer.loan.ui.LoanApplication
+import com.messaging.producer.loan.ui.LoanApplicationController
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.http.ResponseEntity
 import spock.lang.Specification

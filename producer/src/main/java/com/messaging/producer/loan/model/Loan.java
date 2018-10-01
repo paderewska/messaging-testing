@@ -1,4 +1,4 @@
-package com.messaging.producer.model;
+package com.messaging.producer.loan.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

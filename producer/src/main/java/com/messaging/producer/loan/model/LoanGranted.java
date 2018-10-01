@@ -1,4 +1,4 @@
-package com.messaging.producer.model;
+package com.messaging.producer.loan.model;
 
 import java.math.BigDecimal;
 import java.time.Instant;

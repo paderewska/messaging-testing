@@ -1,4 +1,4 @@
-package com.messaging.producer.ui;
+package com.messaging.producer.loan.ui;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

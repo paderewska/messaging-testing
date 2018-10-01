@@ -1,4 +1,4 @@
-package com.messaging.producer.config;
+package com.messaging.producer.loan.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

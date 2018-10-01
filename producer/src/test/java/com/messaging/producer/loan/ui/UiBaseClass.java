@@ -1,8 +1,8 @@
 //package com.messaging.producer.ui;
 //
 //import com.jayway.restassured.module.mockmvc.RestAssuredMockMvc;
-//import com.messaging.producer.application.ApplyForLoanService;
-//import com.messaging.producer.model.Loan;
+//import ApplyForLoanService;
+//import Loan;
 //import org.junit.Before;
 //import org.junit.runner.RunWith;
 //import org.mockito.BDDMockito;

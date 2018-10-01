@@ -1,6 +1,6 @@
-package com.messaging.producer;
+package com.messaging.producer.loan;
 
-import com.messaging.producer.model.DomainEvent;
+import com.messaging.producer.loan.model.DomainEvent;
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.messaging.support.GenericMessage;
 import org.springframework.stereotype.Component;
