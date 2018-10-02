@@ -20,7 +20,7 @@ public class LoanApplicationController {
     }
 
     @PostMapping
-    ResponseEntity applyForLoan(@RequestBody LoanApplication loanApplication) {
+    public ResponseEntity applyForLoan(@RequestBody LoanApplication loanApplication) {
         return applyForLoanService
                 .apply(loanApplication.getPesel())
                 .map(loan -> ok().build())

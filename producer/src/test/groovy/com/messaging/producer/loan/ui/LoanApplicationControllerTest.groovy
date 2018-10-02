@@ -1,10 +1,6 @@
 package com.messaging.producer.loan.ui
 
-import com.messaging.producer.loan.DomainEventPublisher
-import com.messaging.producer.loan.application.ApplyForLoanService
-import com.messaging.producer.loan.model.LoanRepository
-import com.messaging.producer.loan.ui.LoanApplication
-import com.messaging.producer.loan.ui.LoanApplicationController
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.http.ResponseEntity
 import spock.lang.Specification
@@ -12,11 +8,8 @@ import spock.lang.Specification
 @SpringBootTest
 class LoanApplicationControllerTest extends Specification {
 
-    LoanRepository loanRepository = Stub()
-    DomainEventPublisher publisher = Mock()
-    ApplyForLoanService applyForLoanService = new ApplyForLoanService(publisher, loanRepository)
-
-    LoanApplicationController loanApplicationController = new LoanApplicationController(applyForLoanService)
+    @Autowired
+    LoanApplicationController loanApplicationController
 
     def 'should be able to get card when born in 80s or later'() {
         when:

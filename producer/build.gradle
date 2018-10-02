@@ -49,6 +49,7 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 	testImplementation('org.springframework.cloud:spring-cloud-stream-test-support')
 	testImplementation('org.spockframework:spock-core:1.1-groovy-2.4')
+	testImplementation('org.spockframework:spock-spring:1.1-groovy-2.4')
 	testImplementation('org.codehaus.groovy:groovy-all:2.4.4')
 	testImplementation('com.jayway.restassured:spring-mock-mvc:2.2.0')
 }

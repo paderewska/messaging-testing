@@ -5,6 +5,7 @@ import com.messaging.producer.loan.application.ApplyForLoanService
 import com.messaging.producer.loan.model.LoanApplicationRejected
 import com.messaging.producer.loan.model.LoanGranted
 import com.messaging.producer.loan.model.LoanRepository
+import org.springframework.beans.factory.annotation.Autowired
 import spock.lang.Specification
 
 class ApplyForLoanWithEventUnitTest extends Specification {
