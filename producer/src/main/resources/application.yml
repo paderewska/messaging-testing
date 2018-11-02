@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: channel
+          content-type: application/json
+server:
+  port: 8081

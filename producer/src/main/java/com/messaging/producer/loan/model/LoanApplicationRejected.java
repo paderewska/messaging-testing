@@ -21,6 +21,6 @@ public class LoanApplicationRejected implements DomainEvent {
 
     @Override
     public String getType() {
-        return "card-application-rejected";
+        return "loan-application-rejected";
     }
 }

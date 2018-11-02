@@ -40,6 +40,6 @@ class ApplyForCardWithEventMessageCollectorTest extends Specification {
         when:
         loanApplicationController.applyForLoan(new LoanApplication("56101406622"))
         then:
-        events.poll().headers.containsValue("card-application-rejected")
+        events.poll().headers.containsValue("loan-application-rejected")
     }
 }

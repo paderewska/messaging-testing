@@ -1,9 +1,0 @@
-#spring:
-##  profiles: local
-#  cloud:
-#    stream:
-#      bindings:
-#        input:
-#          destination: channel
-#server:
-#  port: 8081
