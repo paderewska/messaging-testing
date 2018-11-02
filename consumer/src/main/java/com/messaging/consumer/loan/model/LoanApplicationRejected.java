@@ -12,6 +12,9 @@ public class LoanApplicationRejected {
         this.timestamp = Instant.now();
     }
 
+    public LoanApplicationRejected() {
+    }
+
     public void setPesel(String pesel) {
         this.pesel = pesel;
     }
