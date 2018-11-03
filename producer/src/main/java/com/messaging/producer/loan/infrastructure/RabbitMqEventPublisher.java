@@ -1,5 +1,6 @@
-package com.messaging.producer.loan;
+package com.messaging.producer.loan.infrastructure;
 
+import com.messaging.producer.loan.DomainEventPublisher;
 import com.messaging.producer.loan.model.DomainEvent;
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.messaging.support.GenericMessage;
@@ -9,11 +10,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Component
-public class ToRabbitMqEventPublisher implements DomainEventPublisher {
+public class RabbitMqEventPublisher implements DomainEventPublisher {
 
     private final Source source;
 
-    public ToRabbitMqEventPublisher(Source source) {
+    public RabbitMqEventPublisher(Source source) {
         this.source = source;
     }
 

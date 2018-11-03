@@ -1,0 +1,16 @@
+label: loan_rejected
+input:
+  triggeredBy: sendRejected()
+outputMessage:
+  sentTo: channel
+  headers:
+    type: loan-application-rejected
+    contentType: application/json
+  body:
+    clientId: 85101406621
+    timestamp: 2018-01-30T11:11:50.000Z
+  matchers:
+    body:
+      - path: $.timestamp
+        type: by_regex
+        predefined: is0_8601_with_offset
